@@ -12,5 +12,8 @@
   "keywords": [
     "css",
     "scss"
-  ]
+  ],
+  "peerDependencies": {
+    "sass": ">=1.61.0"
+  }
 }
