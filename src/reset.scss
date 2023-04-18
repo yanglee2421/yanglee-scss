@@ -3,14 +3,24 @@
 *::after {
   box-sizing: border-box;
 }
-
+:root {
+  scroll-behavior: smooth;
+}
 html,
 body {
   height: 100%;
 }
-
 body {
   margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+}
+input {
+  outline: none;
 }
 
 // ========滚动条优化
@@ -51,12 +61,13 @@ body {
 }
 
 // =======================全局工具
-:root {
-  scroll-behavior: smooth;
-}
 [v-cloak] {
   display: none !important;
 }
-#root {
+#root,
+#app {
   height: 100%;
+}
+.b {
+  border: 1px red solid;
 }

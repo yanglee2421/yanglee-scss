@@ -1,3 +1,62 @@
-.b-red {
-  border: 1px red solid;
+.m-center {
+  width: fit-content;
+  margin-inline: auto;
+}
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+.shadow-light {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+$-wh: 25, 50, 75, 100;
+@each $item in$-wh {
+  .w-#{$item} {
+    width: #{$item}+ "%";
+  }
+  .h-#{$item} {
+    height: #{$item}+ "%";
+  }
+  .wh-#{$item} {
+    width: #{$item}+ "%";
+    height: #{$item}+ "%";
+  }
+}
+
+$-spas: "p", "b", "m";
+@each $spa in $-spas {
+  $var: null;
+  @if $spa== "p" {
+    $var: "padding";
+  } @else if $spa== "b" {
+    $var: "border";
+  } @else if $spa== "m" {
+    $var: "margin";
+  }
+  @for $i from 0 through 3 {
+    // variable
+    $length: $i * 0.5rem;
+    // rules
+    .#{$spa}-#{$i} {
+      #{$var}: $length !important;
+    }
+    .#{$spa}x-#{$i} {
+      #{$var}-inline: $length;
+    }
+    .#{$spa}y-#{$i} {
+      #{$var}-block: $length;
+    }
+    .#{$spa}t-#{$i} {
+      #{$var}-top: $length !important;
+    }
+    .#{$spa}r-#{$i} {
+      #{$var}-right: $length !important;
+    }
+    .#{$spa}b-#{$i} {
+      #{$var}-bottom: $length;
+    }
+    .#{$spa}l-#{$i} {
+      #{$var}-left: $length;
+    }
+  }
 }
