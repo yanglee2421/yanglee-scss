@@ -1,5 +1,10 @@
 # yanglee-scss
 
+![version](https://img.shields.io/badge/version-0.0.2-blue)
+![npm](https://img.shields.io/badge/yan-v1.2.19-orange)
+![dependencies](https://img.shields.io/badge/dependencies-scss-brightgreen)
+![developer](https://img.shields.io/badge/developer-YangLee-f39f37)
+
 ## Installation
 
 ```powershell
@@ -15,15 +20,10 @@ npm i @yanglee2421/scss
 
 ```js
 // vite.config.js
-import { ConfigEnv, defineConfig, UserConfig } from "vite";
+import { defineConfig } from "vite";
 import { resolve } from "node:path";
 
 export default defineConfig((configEnv) => ({
-  resolve: {
-    alias: {
-      "@": resolve(__dirname, "./src"),
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: { additionalData: `@use "@yanglee2421/scss/src" as *;` },
