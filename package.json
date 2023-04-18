@@ -2,7 +2,7 @@
   "name": "@yanglee2421/scss",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "src/index.scss",
+  "main": "src/reset.scss",
   "author": "yanglee2421",
   "repository": {
     "type": "git",
