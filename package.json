@@ -2,5 +2,15 @@
   "name": "@yanglee/scss",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "index.scss"
+  "main": "src/index.scss",
+  "author": "yanglee2421",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanglee2421/yanglee-scss/tree/master"
+  },
+  "bugs": "https://github.com/yanglee2421/yanglee-scss/issues",
+  "keywords": [
+    "css",
+    "scss"
+  ]
 }
