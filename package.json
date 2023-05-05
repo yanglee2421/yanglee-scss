@@ -1,6 +1,6 @@
 {
   "name": "@yanglee2421/scss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "src/reset.scss",
   "author": "yanglee2421",
