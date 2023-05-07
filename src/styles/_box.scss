@@ -23,19 +23,12 @@ $-wh: 25, 50, 75, 100;
   }
 }
 
-$-spas: "p", "b", "m";
+$-spas: "p", "m";
 @each $spa in $-spas {
-  $var: null;
-  @if $spa== "p" {
-    $var: "padding";
-  } @else if $spa== "b" {
-    $var: "border";
-  } @else if $spa== "m" {
-    $var: "margin";
-  }
+  $var: if($spa == "p", "padding", "margin");
   @for $i from 0 through 3 {
-    // variable
     $length: $i * 0.5rem;
+
     // rules
     .#{$spa}-#{$i} {
       #{$var}: $length !important;
