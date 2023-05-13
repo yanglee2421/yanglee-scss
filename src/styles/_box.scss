@@ -1,6 +1,15 @@
+.page {
+  min-height: 100%;
+}
 .m-center {
   width: fit-content;
   margin-inline: auto;
+}
+.border {
+  border: #dcdfe6 1px solid;
+}
+.border-dash {
+  border: #dcdfe6 2px dashed;
 }
 .shadow {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);

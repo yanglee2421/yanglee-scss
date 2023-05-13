@@ -1,6 +1,4 @@
-.flex {
-  display: flex;
-}
+// Flex item
 .flex-1 {
   flex: 1;
 }
@@ -13,12 +11,23 @@
   overflow: auto;
   overflow: overlay;
 }
+
+// Flex box
+.flex {
+  display: flex;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
+
   height: 100%;
 }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+// Flex Align
 $-align: "start", "center", "end", "stretch", "between", "around", "evenly";
 @each $item in $-align {
   // 作为属性值使用
