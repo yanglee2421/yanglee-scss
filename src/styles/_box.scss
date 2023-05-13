@@ -1,6 +1,3 @@
-.page {
-  min-height: 100%;
-}
 .m-center {
   width: fit-content;
   margin-inline: auto;
@@ -18,20 +15,42 @@
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
+// Size
 $-wh: 25, 50, 75, 100;
 @each $item in$-wh {
   .w-#{$item} {
     width: #{$item}+ "%";
   }
+  .min-w-#{$item} {
+    min-width: #{$item}+ "%";
+  }
+  .max-w-#{$item} {
+    max-width: #{$item}+ "%";
+  }
   .h-#{$item} {
     height: #{$item}+ "%";
+  }
+  .min-h-#{$item} {
+    min-height: #{$item}+ "%";
+  }
+  .max-h-#{$item} {
+    max-height: #{$item}+ "%";
   }
   .wh-#{$item} {
     width: #{$item}+ "%";
     height: #{$item}+ "%";
   }
+  .min-wh-#{$item} {
+    min-width: #{$item}+ "%";
+    min-height: #{$item}+ "%";
+  }
+  .max-wh-#{$item} {
+    max-width: #{$item}+ "%";
+    max-height: #{$item}+ "%";
+  }
 }
 
+// Padding & margin
 $-spas: "p", "m";
 @each $spa in $-spas {
   $var: if($spa == "p", "padding", "margin");
